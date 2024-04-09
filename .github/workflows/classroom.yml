@@ -20,6 +20,7 @@ jobs:
       with:
         timeout: 10
         max-score: 1
+        setup-command: 'pip3 install pyarrow pandas '
     - name: Autograding Reporter
       uses: education/autograding-grading-reporter@v1
       env:
